@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>JavaScript杂记（三） | PPOffice&#39; Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="阅读刘同学的博客有感，笔记如下：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript杂记（三）">
+<meta property="og:url" content="http://ppoffice.github.io/2015/04/28/JavaScript-Notes-3/index.html">
+<meta property="og:site_name" content="PPOffice' Blog">
+<meta property="og:description" content="阅读刘同学的博客有感，笔记如下：">
+<meta property="og:image" content="/thumbnails/t5.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript杂记（三）">
+<meta name="twitter:description" content="阅读刘同学的博客有感，笔记如下：">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href='//fonts.useso.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?325d381083400e615225f360df99c537";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo"><i class="logo"></i><span class="site-title">PPOffice&#39; Blog</span></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">主页</a>
+        
+          <a class="main-nav-link" href="/archives">文档</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div class="profile" id="profile-nav">
+          <a id="profile-anchor" href="javascript:;"><img class="avatar" src="/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+        </div>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"> </button><input type="hidden" name="q" value="site:http://ppoffice.github.io"></form>
+      </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tr>
+      
+        <td><a class="main-nav-link" href="/">主页</a></td>
+      
+        <td><a class="main-nav-link" href="/archives">文档</a></td>
+      
+        <td><a class="main-nav-link" href="/about">关于</a></td>
+      
+      <td>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="hidden" name="q" value="site:http://ppoffice.github.io"></form>
+      </td>
+      </tr>
+    </table>
+  </div>
+  
+</header>
+    <div class="outer">
+      <aside id="profile">
+  <div class="inner profile-inner">
+  	<div class="base-info profile-block">
+		  <img id="avatar" src="/css/images/avatar.png">
+      <h2 id="name">PPOffice</h2>
+      <h3 id="title">Web开发者 &amp; 设计师</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>中国，哈尔滨</span>
+      <a id="follow" href="https://github.com/ppoffice/">关注我</a>
+  	</div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        5
+        <span>文章</span>
+      </div>
+      <div class="article-info-block">
+        2
+        <span>标签</span>
+      </div>
+    </div>
+    
+  </div>
+</aside>
+      <section id="main"><article id="post-JavaScript-Notes-3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JavaScript杂记（三）
+    </h1>
+  
+
+        <div class="article-meta">
+          <div class="article-date">
+  <i class="fa fa-calendar"></i>
+  <a href="/2015/04/28/JavaScript-Notes-3/">
+    <time datetime="2015-04-28T05:40:35.000Z" itemprop="datePublished">2015-04-28</time>
+  </a>
+</div>
+          
+  <div class="article-category">
+  	<i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/Front-End/">Front-End</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Front-End/JavaScript/">JavaScript</a>
+  </div>
+
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/thumbnails/t5.jpg" alt=""><br>阅读<a href="http://liuyangzuo.me/" target="_blank" rel="external">刘同学的博客</a>有感，笔记如下：<br><a id="more"></a></p>
+<ul>
+<li><p>非常有用的本地图片预览，使用了<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader" target="_blank" rel="external">HTML5 FileReader</a></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">previewFile</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> preview = <span class="built_in">document</span>.querySelector(<span class="string">'img'</span>);</span><br><span class="line">  <span class="keyword">var</span> file    = <span class="built_in">document</span>.querySelector(<span class="string">'input[type=file]'</span>).files[<span class="number">0</span>];</span><br><span class="line">  <span class="keyword">var</span> reader  = <span class="keyword">new</span> FileReader();</span><br><span class="line"></span><br><span class="line">  reader.onloadend = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    preview.src = reader.result;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (file) &#123;</span><br><span class="line">    reader.readAsDataURL(file);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    preview.src = <span class="string">""</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>浏览器支持情况：<br>Firefox (Gecko) 3.6(1.9.2)+<br>Chrome 7+<br>Internet Explorer* 10+<br>Opera*<br>Safari<br>*IE9有一个File API Lab，Opera从11.10开始部分支持该API.</p>
+</li>
+<li><p><a href="http://liuyangzuo.me/2015/01/30/JavaScript-Prototype-%E4%B8%80/" target="_blank" rel="external">对象原型继承</a>，我的看法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 更改了创建方式</span></span><br><span class="line"><span class="built_in">Object</span>.prototype.create = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">  F.prototype = <span class="keyword">this</span>;</span><br><span class="line">  <span class="keyword">return</span> F;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 可以直接从所有Object进行继承，不需要使用Object.create的方式传入</span></span><br><span class="line"><span class="keyword">var</span> stooge = &#123;</span><br><span class="line">  <span class="string">"first-name"</span>:<span class="string">"liu"</span>,</span><br><span class="line">  <span class="string">"last-name"</span>:<span class="string">"yangzuo"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> another1_stooge = stooge.create();</span><br><span class="line">another1_stooge[<span class="string">"first-name"</span>] = <span class="string">"zhang"</span>;</span><br><span class="line">stooge[<span class="string">"first-name"</span>];          <span class="comment">// "liu"</span></span><br><span class="line">another2_stooge[<span class="string">"first-name"</span>]; <span class="comment">// "zhang"</span></span><br></pre></td></tr></table></figure>
+<p>这与<a href="http://liuyangzuo.me/2015/04/17/Deep-copy/" target="_blank" rel="external">对象的深拷贝</a>是不同的，深拷贝知识将属性和方法进行复制，并不更改原型链：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.prototype.clone = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> o = <span class="keyword">this</span>.constructor === <span class="built_in">Array</span> ? [] : &#123;&#125;;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> e <span class="keyword">in</span> <span class="keyword">this</span>)&#123;</span><br><span class="line">              o[e] = <span class="keyword">typeof</span> <span class="keyword">this</span>[e] === <span class="string">"object"</span> ? <span class="keyword">this</span>[e].clone() : <span class="keyword">this</span>[e];</span><br><span class="line">  &#125;</span><br><span class="line">    <span class="keyword">return</span> o;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关于<a href="http://liuyangzuo.me/2015/02/04/JavaScript-%E4%BA%8B%E4%BB%B6/" target="_blank" rel="external">事件冒泡与事件捕获</a></p>
+<blockquote>
+<p>一般浏览级事件传播默认是事件冒泡,我们可以设置事件传播的方式是冒泡方式,还是捕获方式。上面所讲的addEventListener函数的第三个参数就是选择事件传播的方式，传入true事件传播方式为事件捕获,传入false事件传播方式为事件冒泡。</p>
+</blockquote>
+<p>另附：<a href="http://blog.csdn.net/woshixuye/article/details/7422985" target="_blank" rel="external">jQuery中return false,e.preventDefault(),e.stopPropagation()的区别</a></p>
+</li>
+<li><p><a href="http://liuyangzuo.me/2015/01/14/div%E6%B0%B4%E5%B9%B3%E7%AB%96%E7%9B%B4%E5%B1%85%E4%B8%AD/" target="_blank" rel="external">怎么让一个div元素保持适中水平,竖直居中?</a>，上面的方法只能用来解决定宽定高的容器居中问题，其实使用Table配合</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">text-align</span><span class="pseudo">:center</span>;<span class="tag">verticle-align</span><span class="pseudo">:middle</span>;</span><br></pre></td></tr></table></figure>
+<p>效果更佳。</p>
+</li>
+<li><p><a href="http://liuyangzuo.me/2014/11/09/jQuery%E5%AF%B9%E8%B1%A1%E8%BD%AC%E5%8C%96DOM%E5%AF%B9%E8%B1%A1/" target="_blank" rel="external">jQuery对象转化DOM对象</a>，仅需将jQuery对象当作数组即可，新技能get。</p>
+</li>
+<li><p><a href="http://liuyangzuo.me/2014/11/03/%E5%A5%BD%E7%8E%A9%E7%9A%84JavaScript-%E4%BA%8C/" target="_blank" rel="external">好玩的JavaScript(二)</a></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> SideBar = (<span class="function"><span class="keyword">function</span> <span class="title">Module</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">var</span> SideBar = &#123;</span><br><span class="line">    num : <span class="number">1</span>,</span><br><span class="line">    animation : <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">f</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span> == <span class="built_in">window</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span> == SideBar);</span><br><span class="line">      f();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> SideBar;</span><br><span class="line">&#125;());</span><br><span class="line"><span class="built_in">console</span>.log(SideBar.num); <span class="comment">// 1</span></span><br><span class="line">SideBar.animation();      <span class="comment">// true -&gt; this === Sidebar</span></span><br><span class="line">                          <span class="comment">// true -&gt; this === window</span></span><br></pre></td></tr></table></figure>
+<p>注意，倒数第二行的Sidebar是闭包中的Sidebar，而不是立即函数前的Sidebar。这涉及到<a href="http://liuyangzuo.me/2014/10/31/JavaScript%E4%B8%AD%E7%9A%84this/" target="_blank" rel="external">JavaScript中的this</a>：</p>
+<blockquote>
+<p>如果嵌套函数作为函数调用,其this值不是全局对象(非严格模式)就是undefined(严格模式)</p>
+</blockquote>
+</li>
+<li><p>近来发现JavaScript不是唯一拥有闭包特性的语言。PHP和Python等也有……（囧）</p>
+</li>
+</ul>
+<p>通篇略读完，受益匪浅。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ppoffice.github.io/2015/04/28/JavaScript-Notes-3/" data-id="ci92rrc35000dco7n675hd6vy" class="article-share-link">分享到</a>
+      
+        <a href="http://ppoffice.github.io/2015/04/28/JavaScript-Notes-3/#disqus_thread" class="article-comment-link">评论</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/03/29/JavaScript-Notes-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">JavaScript杂记（二）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+      
+        <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/04/28/JavaScript-Notes-3/" class="thumbnail">
+  
+    <span style="background-image:url(/thumbnails/t5.jpg
+)" alt="JavaScript杂记（三）" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Front-End/">Front-End</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Front-End/JavaScript/">JavaScript</a></p>
+              <p class="item-title"><a href="/2015/04/28/JavaScript-Notes-3/" class="title">JavaScript杂记（三）</a></p>
+              <p class="item-date"><time datetime="2015-04-28T05:40:35.000Z" itemprop="datePublished">2015-04-28</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/03/29/JavaScript-Notes-2/" class="thumbnail">
+  
+    <span style="background-image:url(/thumbnails/t4.jpg
+)" alt="JavaScript杂记（二）" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Front-End/">Front-End</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Front-End/JavaScript/">JavaScript</a></p>
+              <p class="item-title"><a href="/2015/03/29/JavaScript-Notes-2/" class="title">JavaScript杂记（二）</a></p>
+              <p class="item-date"><time datetime="2015-03-29T14:47:10.000Z" itemprop="datePublished">2015-03-29</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/03/26/JavaScript-Ripple-Button/" class="thumbnail">
+  
+    <span style="background-image:url(/thumbnails/t3.jpg
+)" alt="Ripple Button（涟漪按钮）原生JavaScript实现" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Front-End/">Front-End</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Front-End/JavaScript/">JavaScript</a></p>
+              <p class="item-title"><a href="/2015/03/26/JavaScript-Ripple-Button/" class="title">Ripple Button（涟漪按钮）原生JavaScript实现</a></p>
+              <p class="item-date"><time datetime="2015-03-26T13:44:28.000Z" itemprop="datePublished">2015-03-26</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/03/16/JavaScript-Notes-1/" class="thumbnail">
+  
+    <span style="background-image:url(/thumbnails/t2.jpg
+)" alt="JavaScript杂记（一）" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Front-End/">Front-End</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Front-End/JavaScript/">JavaScript</a></p>
+              <p class="item-title"><a href="/2015/03/16/JavaScript-Notes-1/" class="title">JavaScript杂记（一）</a></p>
+              <p class="item-date"><time datetime="2015-03-16T01:13:36.000Z" itemprop="datePublished">2015-03-16</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2015/03/15/JavaScript-Interview-1/" class="thumbnail">
+  
+    <span style="background-image:url(/thumbnails/t1.jpg
+)" alt="前端工作面试问题（一）" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Front-End/">Front-End</a></p>
+              <p class="item-title"><a href="/2015/03/15/JavaScript-Interview-1/" class="title">前端工作面试问题（一）</a></p>
+              <p class="item-date"><time datetime="2015-03-14T16:00:00.000Z" itemprop="datePublished">2015-03-15</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Front-End/">Front-End</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Front-End/JavaScript/">JavaScript</a><span class="category-list-count">4</span></li></ul></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Interview/">Interview</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Interview/" style="font-size: 10px;">Interview</a><a href="/tags/JavaScript/" style="font-size: 20px;">JavaScript</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+  
+  <div id="toTop" class="fa fa-chevron-up"></div>
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 PPOffice<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script>
+  var disqus_shortname = 'ppofficeongithub';
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
